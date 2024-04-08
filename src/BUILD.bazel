@@ -3,5 +3,5 @@ cc_binary(
     srcs = ["main.cpp"],
     deps = ["//lib:arithmetics"],
     copts = ["-O1", "-g", "-fno-omit-frame-pointer"],
-    linkopts = ["-fsanitize=address"]
+    linkopts = ["-fsanitize=address"],
 )

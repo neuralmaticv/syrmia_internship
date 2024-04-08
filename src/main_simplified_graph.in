@@ -1,0 +1,10 @@
+digraph mygraph {
+  node [shape=box];
+  "//:main"
+  "//:main" -> "//:main.cpp"
+  "//:main" -> "//lib:arithmetics"
+  "//lib:arithmetics"
+  "//lib:arithmetics" -> "//lib:arithmetics.hpp\n//lib:arithmetics.cpp"
+  "//lib:arithmetics.hpp\n//lib:arithmetics.cpp"
+  "//:main.cpp"
+}

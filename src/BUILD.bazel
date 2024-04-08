@@ -1,0 +1,7 @@
+cc_binary(
+    name = "main",
+    srcs = ["main.cpp"],
+    deps = ["//lib:arithmetics"],
+    copts = ["-O1", "-g", "-fno-omit-frame-pointer"],
+    linkopts = ["-fsanitize=address"]
+)

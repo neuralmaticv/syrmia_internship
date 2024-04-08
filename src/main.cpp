@@ -6,10 +6,10 @@ int main() {
     std::cout << "Enter two integers: ";
     std::cin >> a >> b;
     
-    std::cout << "Sum: " << Arithmetic::calcSum(a, b) << std::endl;
-    std::cout << "Difference: " << Arithmetic::calcDiff(a, b) << std::endl;
-    std::cout << "Product: " << Arithmetic::calcProduct(a, b) << std::endl;
-    std::cout << "Square of " << a << ": " << Arithmetic::calcSquare(a) << std::endl;
+    std::cout << "Sum: " << Arithmetics::calcSum(a, b) << std::endl;
+    std::cout << "Difference: " << Arithmetics::calcDiff(a, b) << std::endl;
+    std::cout << "Product: " << Arithmetics::calcProduct(a, b) << std::endl;
+    std::cout << "Square of " << a << ": " << Arithmetics::calcSquare(a) << std::endl;
 
     return 0;
 }

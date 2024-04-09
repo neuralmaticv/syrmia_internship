@@ -4,11 +4,14 @@
 class Arithmetics
 {
 public:
-    static int calcSum(int a, int b);
-    static int calcDiff(int a, int b);
-    static int calcProduct(int a, int b);
-    static int calcSquare(int a);
-    int addBugs(void) const;
+    int first, second;
+    Arithmetics();
+    Arithmetics(int first, int second);
+    int calcSum(void) const;
+    int calcDiff(void) const;
+    int calcProduct(void) const;
+    int calcSquare(void) const;
+    // int addBugs(void) const;
 };
 
 #endif // ARITHMETICS_HPP

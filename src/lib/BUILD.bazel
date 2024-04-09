@@ -4,3 +4,11 @@ cc_library(
     hdrs = ["arithmetics.hpp"],
     visibility = ["//visibility:public"],
 )
+
+cc_test(
+  name = "arithmetics_test",
+  size = "small",
+  srcs = ["tests/arithmetics_test.cpp"],
+  deps = ["@com_google_googletest//:gtest_main",
+          ":arithmetics"],
+)

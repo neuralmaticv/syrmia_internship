@@ -1,0 +1,5 @@
+py_binary(
+    name = "test_parser",
+    srcs = ["test_parser.py"],
+    visibility = ["//visibility:public"]
+)

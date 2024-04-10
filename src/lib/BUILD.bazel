@@ -1,3 +1,6 @@
+load("//:rules/test_report.bzl", "test_report")
+load("//:rules/test_extractor.bzl", "test_extractor")
+
 cc_library(
     name = "arithmetics",
     srcs = ["arithmetics.cpp"],
@@ -11,4 +14,18 @@ cc_test(
   srcs = ["tests/arithmetics_test.cpp"],
   deps = ["@com_google_googletest//:gtest_main",
           ":arithmetics"],
+)
+
+test_report(
+  name = "arithmetics_test_report",
+  test = "//lib:arithmetics_test",
+  testonly = True
+)
+
+test_extractor(
+  name = "tests_csv",
+  report = "//lib:arithmetics_test_report",
+  source = "tests/arithmetics_test.cpp",
+  extraction_tool = "//test_parser:test_parser",
+  testonly = True
 )

@@ -29,6 +29,7 @@ class ArithmeticsTestFixture : public ::testing::Test {
         }
 };
 
+// COM_1
 TEST_F(ArithmeticsTestFixture, SumIntTest)
 {
     EXPECT_EQ(zeros.calcSum(), 0);
@@ -36,7 +37,7 @@ TEST_F(ArithmeticsTestFixture, SumIntTest)
     EXPECT_EQ(smallerFirst.calcSum(), 140);
 }
 
-
+// COM_2
 TEST_F(ArithmeticsTestFixture, DiffIntTest)
 {
     EXPECT_EQ(zeros.calcDiff(), 0);
@@ -44,6 +45,7 @@ TEST_F(ArithmeticsTestFixture, DiffIntTest)
     EXPECT_EQ(smallerFirst.calcDiff(), -60);
 }
 
+// COM_3
 TEST_F(ArithmeticsTestFixture, ProductIntTest)
 {
     EXPECT_EQ(zeros.calcProduct(), 0);
@@ -51,10 +53,11 @@ TEST_F(ArithmeticsTestFixture, ProductIntTest)
     EXPECT_EQ(smallerFirst.calcProduct(), 4000);
 }
 
+// COM_4
 TEST_F(ArithmeticsTestFixture, SquareIntTest)
 {
     EXPECT_EQ(zeros.calcProduct(), 0);
     EXPECT_EQ(largerFirst.calcSquare(), 10000);
     EXPECT_EQ(smallerFirst.calcSquare(), 1600);
-    EXPECT_EQ(smallerFirst.calcSquare(), 160);
+    // EXPECT_EQ(smallerFirst.calcSquare(), 160);
 }

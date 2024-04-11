@@ -1,0 +1,10 @@
+Requirement ID,Description,Derived from,Satisfied by,Verification method,Version,Author,Note,Verdict
+SYS_1,The system shall estimate time to collision with front vehicle.,SG_1,"ELE_1, ELE_2, ELE_3, ELE_4",System test,1.1,VA,,
+SYS_2,"When estimated time to collision with front vehicle is less than 1s, brake pedal shall be applied.",SG_1,NA,System test,1.1,VA,,
+ELE_1,The system shall obtain readings from radar sensors.,SYS_1,NA,Integration test,1.1,VA,,
+ELE_2,The system shall obtain speed of host vehicle.,SYS_1,NA,Integration test,1.1,VA,,
+ELE_3,"Based on readings from radar sensor and speed of host vehicle, system shall estimate time to collision with front vehicle.",SYS_1,NA,Integration test,1.1,VA,,
+ELE_4,The system shall implement component for executing arithmetic operations necessary for conversions.,SYS_1,"COM_1, COM_2, COM_3",Integration test,1.1,VA,,
+COM_1,The arithmetics component shall implement function for calculating sum of two integer numbers.,ELE_4,NA,Unit test,1.1,VA,,completed
+COM_2,The arithmetics component shall implement function for calculating difference of two integer numbers.,ELE_4,NA,Unit test,1.1,VA,,failed
+COM_3,The arithmetics component shall implement function for calculating square of integer number.,ELE_4,NA,Unit test,1.1,VA,,completed
